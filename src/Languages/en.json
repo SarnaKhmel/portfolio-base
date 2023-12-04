@@ -9,5 +9,7 @@
 
   "welcome": "Welcome to my website!",
   "about": "About Us",
-  "contact": "Contact Us"
+  "contact": "Contact Us",
+
+  "AboutMe": "Hey there! I'm Oleksa Sarnatskyi, a skilled Front-End and React developer based in Kyiv. I'm passionate about all things coding and currently, I'm sharing my knowledge and expertise as a React instructor at GoIT and teaching at Djun. In addition, I have experience freelancing and teaching at ROBOCODE. I hold degrees from both Lviv Polytechnic University and Khmelnytsky Polytechnic College. I'm always on the lookout for exciting new challenges and opportunities to collaborate!"
 }
