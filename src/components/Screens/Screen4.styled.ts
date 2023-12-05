@@ -3,13 +3,15 @@ import doodlesBackground from "./ScreensImages/doodle-items-bg.svg";
 
 export const ScreenBlock = styled.div`
   width: 100%;
-  min-height: 50vh; 
+  height: 70vh; 
   background: url(${doodlesBackground}) repeat;
 `;
 
 
 export const FilterBlock = styled.div`
-  margin: 30px;
+margin: 30px;
+
+
 `;
 
 export const Title = styled.div`
@@ -54,13 +56,13 @@ export const ProjectList = styled.div`
 `;
 
 export const ProjectItem = styled.div`
-  border: 1px solid red;
-  border-radius: 10px;
-  background-color: rgba(57, 62, 70, 0.5);
-  width: 200px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+border: 1px solid red;
+border-radius: 10px;
+background-color: rgba(57, 62, 70, 0.5);
+width: 200px;
+display: flex;
+flex-direction: column;
+align-items: center;
 
 `;
 
