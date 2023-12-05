@@ -20,7 +20,6 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 export const LayoutBlock = styled.div`
   width: 100vw;
   background: #222831;
-  padding: 20px;
 `;
 
 export const Block = styled.div`

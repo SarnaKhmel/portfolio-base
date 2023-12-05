@@ -1,39 +1,67 @@
 import React from "react";
-import styled from "styled-components";
+import {
+  ScreenBlock,
+  FilterBlock,
+  Title,
+  FilterList,
+  FilterItem,
+  ProjectList,
+  ProjectItem,
+  ProjectImage,
+  ProjectTitle,
+  ProjectSource
+} from "./Screen3.styled";
 
 const Screen3: React.FC = () => {
   return (
     <ScreenBlock name="screen3">
-      3
-      <InfoBlock>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
-        incidunt itaque saepe eius ex velit debitis quas consectetur, rem
-        quisquam libero facere suscipit ad perspiciatis unde aut quos eos
-        dolorum!
-      </InfoBlock>
+      <FilterBlock>
+        <Title>
+          My recent works
+        </Title>
+        <FilterList>
+          <FilterItem>
+            All
+          </FilterItem>
+          <FilterItem>
+            JS
+          </FilterItem>
+          <FilterItem>
+            TS
+          </FilterItem>
+          <FilterItem>
+            Back End
+          </FilterItem>
+        </FilterList>
+      </FilterBlock>
+      <ProjectList>
+        <ProjectItem>
+          <ProjectImage src="#" />
+          <ProjectTitle>Sushi with love</ProjectTitle>
+          <ProjectSource>
+            Link to GitHub
+          </ProjectSource>
+        </ProjectItem>
+        <ProjectItem>
+          <ProjectImage src="#" />
+          <ProjectTitle>Sushi with love</ProjectTitle>
+          <ProjectSource>
+            Link to GitHub
+          </ProjectSource>
+        </ProjectItem>
+        <ProjectItem>
+          <ProjectImage src="#" />
+          <ProjectTitle>Sushi with love</ProjectTitle>
+          <ProjectSource>
+            Link to GitHub
+          </ProjectSource>
+        </ProjectItem>
+      </ProjectList>
     </ScreenBlock>
   );
 };
 
-const ScreenBlock = styled.div`
-  height: 70vh;
-  width: 100%;
-  padding-top: 100px;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: repeat(1, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-`;
 
-const InfoBlock = styled.div`
-  margin-top: 100px;
-`;
 
-// const ImgBlock = styled.div`
-//   display: flex;
-//   flex-align: center;
-//   justify-content: center;
-// `;
 
 export default Screen3;
