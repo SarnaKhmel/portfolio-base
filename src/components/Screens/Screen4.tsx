@@ -1,37 +1,75 @@
 import React from "react";
 import styled from "styled-components";
 
-const Screen4 = () => {
+const Screen4: React.FC = () => {
   return (
     <ScreenBlock name="screen4">
-      4
       <InfoBlock>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
-        incidunt itaque saepe eius ex velit debitis quas consectetur, rem
-        quisquam libero facere suscipit ad perspiciatis unde aut quos eos
-        dolorum!
+        <Title>
+          My diplomas and certificates
+        </Title>
+        <List>
+          <Item>
+            <ItemImg />
+          </Item>
+          <Item>
+            <ItemImg />
+          </Item>
+          <Item>
+            <ItemImg />
+          </Item>
+          <Item>
+            <ItemImg />
+          </Item>
+          <Item>
+            <ItemImg />
+          </Item>
+          <Item>
+            <ItemImg />
+          </Item>
+          <Item>
+            <ItemImg />
+          </Item>
+        </List>
       </InfoBlock>
     </ScreenBlock>
   );
 };
 
 const ScreenBlock = styled.div`
-  height: 70vh;
   width: 100%;
-  padding-top: 100px;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: repeat(1, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  min-height: 30vh; 
 `;
 const InfoBlock = styled.div`
-  margin-top: 100px;
+  margin: 25px;
 `;
-const ImgBlock = styled.div`
+const Title = styled.div`
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 96px;
+  letter-spacing: 0em;
+  text-align: left;
+`;
+
+const List = styled.ul`
+  list-style: none;
   display: flex;
-  flex-align: center;
-  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
 `;
+const Item = styled.li`
+  height: 150px;
+  width: 200px;
+  padding: 10px 32px;
+  border-radius: 30px;
+  background-color: rgba(57, 62, 70, 0.7);
+  cursor: pointer;
+`;
+const ItemImg = styled.img`
+  height: 100%;
+  width: 100%;
+`;
+
 
 export default Screen4;
