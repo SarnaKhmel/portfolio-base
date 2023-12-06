@@ -55,6 +55,5 @@ const LinksItem = styled.li`
   }
 `;
 
-const ContactItem = styled.li``;
 
 export default Footer;
