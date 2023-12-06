@@ -35,11 +35,11 @@ const Screen4: React.FC = () => {
           </ContactItem>
           <ContactItem>
             <TbBrandSkype size="24" />
-            olsarnat
+            <Link href="skype:olsarnat">olsarnat</Link>
           </ContactItem>
           <ContactItem>
             <LuPhoneForwarded size="24" />
-            <Link href="tel:+380-932-073-52">+380-932-073-52</Link>
+            <Link href="tel:+380932607352">+380932607352</Link>
           </ContactItem>
           <ContactItem>
             <LuAtSign size="24" />

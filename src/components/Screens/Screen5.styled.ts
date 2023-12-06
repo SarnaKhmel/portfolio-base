@@ -12,6 +12,10 @@ export const ContactsBlock = styled.div`
   align-items: center;
   justify-content: center;
   gap:25px;
+  @media only screen and (max-width: 768px) {
+    margin: 5px;
+
+  } 
   
 `;
 
@@ -23,7 +27,9 @@ export const InfoBlock = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
 
 `;
 
@@ -55,6 +61,9 @@ export const ContactRow = styled.li`
   align-items: center;
   justify-content: space-between;
   gap: 30px;
+  @media only screen and (max-width: 768px) {
+    gap: 5px;
+  } 
 `;
 
 export const ContactItem = styled.li`
@@ -65,6 +74,7 @@ display: flex;
   border-radius: 30px;
   background-color: rgba(57, 62, 70, 0.7);
   cursor: pointer;
+  flex-wrap: nowrap;
   &:hover {
     background-color: rgba(22, 73, 0, 1);
   }
@@ -73,4 +83,7 @@ display: flex;
 export const Link = styled.a`
   text-decoration: none;
   color: #fff;
+  &:hover {
+    color: #fff;
+  }
 `;

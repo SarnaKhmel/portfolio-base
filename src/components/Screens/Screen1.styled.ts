@@ -27,6 +27,11 @@ export const TitleWhite = styled.div`
   font-size: 76px;
   font-weight: 600;
   line-height: 76px;
+  @media only screen and (max-width: 768px) {
+    font-size: 52px;
+    font-weight: 500;
+    line-height: 56px;
+  } 
 `;
 
 export const TitleGreen = styled.div`
@@ -34,6 +39,11 @@ export const TitleGreen = styled.div`
   font-weight: 600;
   line-height: 52px;
   color: rgba(22, 73, 0, 1);
+  @media only screen and (max-width: 768px) {
+    font-size: 47px;
+    font-weight: 500;
+    line-height: 50px;
+  } 
 `;
 
 export const ImgBlock = styled.div`
