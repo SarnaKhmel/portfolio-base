@@ -18,6 +18,11 @@ export const Title = styled.div`
   line-height: 96px;
   letter-spacing: 0em;
   text-align: left;
+  @media only screen and (max-width: 768px) {
+    font-size: 52px;
+    font-weight: 500;
+    line-height: 56px;
+  } 
 `;
 
 export const FilterList = styled.ul`
