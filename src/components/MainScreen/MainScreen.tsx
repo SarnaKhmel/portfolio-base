@@ -3,6 +3,8 @@ import Screen1 from "../Screens/Screen1";
 import Screen2 from "../Screens/Screen2";
 import Screen3 from "../Screens/Screen3";
 import Screen4 from "../Screens/Screen4";
+import Screen5 from "../Screens/Screen5";
+
 import { initReactI18next } from "react-i18next";
 import i18n from "i18next";
 import styled from "styled-components";
@@ -31,6 +33,7 @@ const MainScreen: React.FC = () => {
         <Screen2 />
         <Screen3 />
         <Screen4 />
+        <Screen5 />
       </Main>
     </>
   );

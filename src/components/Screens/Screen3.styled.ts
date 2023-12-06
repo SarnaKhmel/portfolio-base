@@ -54,13 +54,13 @@ export const ProjectList = styled.div`
 `;
 
 export const ProjectItem = styled.div`
-  border: 1px solid red;
-  border-radius: 10px;
+  border-radius: 20px;
   background-color: rgba(57, 62, 70, 0.5);
   width: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
+   padding: 10px;
 
 `;
 
