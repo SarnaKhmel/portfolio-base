@@ -18,7 +18,6 @@ export const ContactsBlock = styled.div`
 
 export const InfoBlock = styled.div`
   margin: 25px;
-  border: 1px solid #fff;
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -74,6 +73,4 @@ display: flex;
 export const Link = styled.a`
   text-decoration: none;
   color: #fff;
- 
- 
 `;
