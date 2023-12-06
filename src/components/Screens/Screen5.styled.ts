@@ -14,7 +14,6 @@ export const ContactsBlock = styled.div`
   gap:25px;
   @media only screen and (max-width: 768px) {
     margin: 5px;
-
   } 
   
 `;
@@ -56,7 +55,7 @@ export const Title = styled.div`
 export const ImgBlock = styled.div``;
 export const Image = styled.img``;
 
-export const ContactRow = styled.li`
+export const ContactRow = styled.ul`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -67,7 +66,7 @@ export const ContactRow = styled.li`
 `;
 
 export const ContactItem = styled.li`
-display: flex;
+  display: flex;
   align-items: center;
   gap: 30px;
   padding: 10px 32px;
