@@ -2,7 +2,6 @@ import React from "react";
 import Home from "../Screens/Home";
 import AboutMe from "../Screens/AboutMe";
 import Works from "../Screens/Works";
-
 import Diploma from "../Screens/Diploma";
 import Contacts from "../Screens/Contacts";
 
