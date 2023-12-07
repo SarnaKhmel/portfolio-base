@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const Screen4: React.FC = () => {
+const Diploma: React.FC = () => {
   return (
     <ScreenBlock name="screen4">
       <InfoBlock>
@@ -77,4 +77,4 @@ const ItemImg = styled.img`
 `;
 
 
-export default Screen4;
+export default Diploma;

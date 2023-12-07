@@ -10,9 +10,9 @@ import {
   ProjectImage,
   ProjectTitle,
   ProjectSource
-} from "./Screen3.styled";
+} from "./Works.styled";
 
-const Screen3: React.FC = () => {
+const Works: React.FC = () => {
   return (
     <ScreenBlock name="screen3">
       <FilterBlock>
@@ -64,4 +64,4 @@ const Screen3: React.FC = () => {
 
 
 
-export default Screen3;
+export default Works;
