@@ -5,10 +5,8 @@ function App() {
   return (
     <Router>
       <Routes>
+        <Route path="*" element={<MainPage />} />
         <Route path="/" element={<MainPage />} />
-        <Route path="/cv" element={<></>} />
-        <Route path="/projects/:id" element={<></>} />
-        <Route path="/contacts" element={<></>} />
       </Routes>
     </Router>
   );
