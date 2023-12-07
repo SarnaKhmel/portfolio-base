@@ -4,7 +4,7 @@ import image1 from "./ScreensImages/img1.svg";
 import { useTranslation, initReactI18next } from "react-i18next";
 import i18n from "i18next";
 
-import { ScreenBlock, InfoBlock, TitleWhite, TitleGreen, ImgBlock, Image, ImageDoodles, ButtonBlock, GreenButton, GreyButton } from './Screen1.styled'
+import { ScreenBlock, InfoBlock, TitleWhite, TitleGreen, ImgBlock, Image, ImageDoodles, ButtonBlock, GreenButton, GreyButton } from './Home.styled'
 
 i18n.use(initReactI18next).init({
   resources: {
@@ -22,7 +22,7 @@ i18n.use(initReactI18next).init({
   },
 });
 
-const Screen1: React.FC = () => {
+const Home: React.FC = () => {
   const { t } = useTranslation();
 
 
@@ -46,4 +46,4 @@ const Screen1: React.FC = () => {
 
 
 
-export default Screen1;
+export default Home;

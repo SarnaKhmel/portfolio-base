@@ -13,7 +13,8 @@ import {
   ImgBlock,
   Doodles,
   Body
-} from "./Screen2.styled";
+} from "./AboutMe.styled";
+
 i18n.use(initReactI18next).init({
   resources: {
     en: {
@@ -29,7 +30,7 @@ i18n.use(initReactI18next).init({
     escapeValue: false,
   },
 });
-const Screen2 = () => {
+const AboutMe = () => {
   const { t } = useTranslation();
 
   return (
@@ -52,4 +53,4 @@ const Screen2 = () => {
 };
 
 
-export default Screen2;
+export default AboutMe;

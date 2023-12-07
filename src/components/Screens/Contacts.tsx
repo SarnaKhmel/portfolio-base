@@ -1,6 +1,6 @@
 import React from "react";
 import img from './ScreensImages/img3.svg'
-import { ScreenBlock, InfoBlock, Title, ImgBlock, Image, ContactsBlock, ContactList, ContactRow, ContactItem, Link } from './Screen5.styled'
+import { ScreenBlock, InfoBlock, Title, ImgBlock, Image, ContactsBlock, ContactList, ContactRow, ContactItem, Link } from './Contacts.styled'
 import { LuLinkedin, LuAtSign, LuInstagram, LuFacebook, LuPhoneForwarded } from "react-icons/lu";
 import { TbBrandTelegram, TbBrandSkype } from "react-icons/tb";
 

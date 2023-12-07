@@ -1,9 +1,10 @@
 import React from "react";
-import Screen1 from "../Screens/Screen1";
-import Screen2 from "../Screens/Screen2";
-import Screen3 from "../Screens/Screen3";
-import Screen4 from "../Screens/Screen4";
-import Screen5 from "../Screens/Screen5";
+import Home from "../Screens/Home";
+import AboutMe from "../Screens/AboutMe";
+import Works from "../Screens/Works";
+
+import Diploma from "../Screens/Diploma";
+import Contacts from "../Screens/Contacts";
 
 import { initReactI18next } from "react-i18next";
 import i18n from "i18next";
@@ -29,11 +30,11 @@ const MainScreen: React.FC = () => {
   return (
     <>
       <Main>
-        <Screen1 />
-        <Screen2 />
-        <Screen3 />
-        <Screen4 />
-        <Screen5 />
+        <Home />
+        <AboutMe />
+        <Works />
+        <Diploma />
+        <Contacts />
       </Main>
     </>
   );
