@@ -105,7 +105,7 @@ const Header: React.FC = () => {
         onRequestClose={openCloseMobileMenu}
         contentLabel="Mobile Menu"
       >
-        <MobileMenuContent>
+        <MobileMenuContent onClick={openCloseMobileMenu}>
           <MobileLink to="screen1" spy={true} smooth={true} duration={250}>
             {t("Home")}
           </MobileLink>
