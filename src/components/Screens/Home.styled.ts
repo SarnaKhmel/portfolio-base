@@ -19,7 +19,7 @@ export const InfoBlock = styled.div`
   justify-content: center;
   padding-left: 50px;
   @media only screen and (max-width: 576px) {
-    z-index:1000;
+    display: none;
   }
 `;
 

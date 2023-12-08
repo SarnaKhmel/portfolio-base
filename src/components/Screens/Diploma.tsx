@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import Modal from "react-modal";
 import diplomaData from "../../data/diploma.json";
+import { AiOutlineCloseCircle } from "react-icons/ai";
+
 
 
 const Diploma: React.FC = () => {
@@ -25,29 +27,28 @@ const Diploma: React.FC = () => {
   return (
     <ScreenBlock name="screen4">
       <InfoBlock>
-        <Title>
-          My diplomas and certificates
-        </Title>
+        <Title>My diplomas and certificates</Title>
         <List>
           <List>
             {data.map((item, index) => (
-              <Item
-                key={index}
-                onClick={() => openModal(item.url)}>
+              <Item key={index} onClick={() => openModal(item.url)}>
                 <ItemImg src={item.url} alt={item.caption} />
               </Item>
             ))}
           </List>
-          <Modal
+          <ModalWrapper
             isOpen={modalIsOpen}
             onRequestClose={closeModal}
             contentLabel="Image Modal">
             <ModalBlock>
-              {selectedImage && <ModalImg src={selectedImage} alt="Selected Image" />}
-              <Button onClick={closeModal}>Close Modal</Button>
+              {selectedImage && (
+                <ModalImg src={selectedImage} alt="Selected Image" />
+              )}
+              <CloseBlock>
+                <AiOutlineCloseCircle size={32} onClick={closeModal} />
+              </CloseBlock>
             </ModalBlock>
-
-          </Modal>
+          </ModalWrapper>
         </List>
       </InfoBlock>
     </ScreenBlock>
@@ -95,24 +96,43 @@ const ItemImg = styled.img`
 
 `;
 
+const ModalWrapper = styled(Modal)`
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index:100;
+
+`;
+
 const ModalBlock = styled.div`
-  margin-top:100px;
   border: 1px solid black;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
 `;
 
 const ModalImg = styled.img`
-
+  height: 60vh;
+  width: 70vw;
+  border-radius: 30px;
+  border: 1px solid black;
 `;
 
-const Button = styled.button`
-  margin-top:100px;
-  color: black;
-  background-color: white;
+const CloseBlock = styled.div`
+  padding: 32px 32px;
+  border-radius: 30px;
+  background-color: rgba(22, 73, 0, 1);
+  cursor: pointer;
+  &:hover {
+    background-color: rgba(57, 62, 70, 0.7);
+  }
 `;
 
 

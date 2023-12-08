@@ -1,10 +1,14 @@
 [
   {
     "url": "./diplomaImg/dip1.png",
-    "caption": "Description 1"
+    "caption": "Bachelor's degree"
   },
   {
     "url": "./diplomaImg/dip2.png",
-    "caption": "Description 2"
+    "caption": "Diploma of junior specialist"
+  },
+  {
+    "url": "./diplomaImg/dip2.png",
+    "caption": "Diploma of junior specialist"
   }
 ]
